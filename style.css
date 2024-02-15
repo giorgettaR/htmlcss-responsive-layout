@@ -50,9 +50,7 @@ img {
     /* TABLET -----------------------------------------------------*/
 
     @media screen and (min-width: 768px) {
-        .container .row {
-            flex-direction: row;
-        }
+        
     }
 
     /* DESKTOP --------------------------------------------------------- */
@@ -70,7 +68,6 @@ img {
         }
         .container .row {
             padding: 20px;
-            flex-direction: row;
         }
         .col-6 {
             width: 50%;
@@ -106,6 +103,11 @@ body {
 .blue {
     color: white;
     background-color: rgba(0,132,253,255);
+}
+
+.purple {
+    color: black;
+    background-color: rgba(151,146,228,255);
 }
 
 /* STYLE HEADER ------------------------------------------------------------ */
@@ -164,7 +166,7 @@ body {
     }
 
     .hero .big-card .description .title,
-    .hero .big-card .description .text {
+    .hero .big-card .description .hook {
         padding: 20px;
     }
 
@@ -192,14 +194,18 @@ body {
     /* QUARY HERO---------------------------------------------------------- */
 
         /* TABLET -----------------------------------------------------*/
-
+            
         @media screen and (min-width: 768px) {
+            .hero .container .row {
+                flex-direction: row;
+            }
+
             .hero .row {
                 flex-wrap: wrap;
                 gap: 0;
             }
             
-            .col-4 {
+            .col-small {
                 width:  calc(100% / 3);
             }
             .row:not(.no-gutter) {
@@ -209,7 +215,7 @@ body {
             .row:not(.no-gutter) >* {
                 padding: 20px 20px;
             }
-            .col-8 {
+            .col-big {
                 width: calc(100% / 3 * 2);
             }
         }
@@ -224,7 +230,68 @@ body {
                 width: 50%;
             }
         }
+/* STYLE VISUALS ------------------------------------------------------------ */
 
+    section.visuals {
+        background-color: rgba(151,146,228,255);
+        color: white;
+    }
+
+    .visuals .planning,
+    .visuals .development {
+        padding: 20px;
+    }
+
+    .visuals .planning img {
+        padding-bottom: 60px;
+    }
+
+    .visuals .planning .title {
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .visuals .development .card {
+        background-color: white;
+        border-radius: 25px;
+        color: black;
+        padding: 20px;
+    }
+
+    .visuals .development .card img,
+    .visuals .development .card .title,
+    .visuals .development .card .hook {
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+
+
+    /* QUARY PLANNING-------------------------------------------------------- */
+    
+        /* IPAD */
+
+        @media screen and (min-width: 768px) and {
+
+        }
+
+        /* DESKTOP */
+
+        @media screen and (min-width: 1200px) {
+            .visuals .container .row {
+                flex-direction: row;
+                align-items: end;
+            }
+            .visuals .col-half {
+                width: 50%;
+            }
+            .visuals .planning img {
+                padding-bottom: 150px;
+            }
+            .visuals .planning .title {
+                padding-bottom: 50px;
+            }
+        }
 
 /* ANIMATIONS ------------------------------------------------------------*/
 
