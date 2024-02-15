@@ -58,7 +58,7 @@ img {
     @media screen and (min-width: 1200px) {
 
         body {
-            font-size: 15px;
+            font-size: 18px;
         }
         .container {
             width: 1200px;
@@ -269,12 +269,6 @@ body {
 
     /* QUARY PLANNING-------------------------------------------------------- */
     
-        /* IPAD */
-
-        @media screen and (min-width: 768px) and {
-
-        }
-
         /* DESKTOP */
 
         @media screen and (min-width: 1200px) {
@@ -292,6 +286,74 @@ body {
                 padding-bottom: 50px;
             }
         }
+
+/* STYLE TESTIMONIALS ------------------------------------------------------------ */
+
+    .testimonials .row {
+        gap: 20px;
+    }
+
+    .testimonials .head {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .testimonials .title {
+        font-size: 30px;
+        color: rgba(151,146,228,255);
+        padding: 20px 0;;
+    }
+
+    .testimonials .card {
+        background-color: rgba(151,146,228,255);
+        border-radius: 25px;
+        padding: 20px;
+        color: wheat;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials .card .photo { 
+        width: 200px;
+        aspect-ratio: 1/1;
+        overflow: hidden; 
+        border-radius: 50%; 
+    }
+
+    .testimonials .card .photo img { 
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .testimonials .card .quote .text {
+        padding: 20px 0;
+    }
+
+    .testimonials .card .quote .name {
+        font-weight: bold;
+    }
+
+    /* QUARY TESTIMONIALS --------------------------------------------------- */
+
+    /* IPAD */
+    
+    @media screen and (min-width: 768px) {
+        .testimonials .card {
+            flex-direction: row;
+        }
+        .testimonials .card .photo { 
+            width: 400px;
+        }
+        .testimonials .card .quote .text {
+            text-align: left;
+            padding: 20px 20px;
+            line-height: 25px;
+        }
+    }
+
+    /* DESKTOP */
 
 /* ANIMATIONS ------------------------------------------------------------*/
 
