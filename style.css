@@ -50,7 +50,7 @@ img {
     /* TABLET -----------------------------------------------------*/
 
     @media screen and (min-width: 768px) {
-        
+       
     }
 
     /* DESKTOP --------------------------------------------------------- */
@@ -205,17 +205,15 @@ body {
                 gap: 0;
             }
             
-            .col-small {
-                width:  calc(100% / 3);
-            }
-            .row:not(.no-gutter) {
-                margin: 0 -20px;
-            }
-            
-            .row:not(.no-gutter) >* {
+            .hero .row [class^="col"] {
                 padding: 20px 20px;
             }
-            .col-big {
+
+            .hero .col-small {
+                width:  calc(100% / 3);
+            }
+
+            .hero .col-big {
                 width: calc(100% / 3 * 2);
             }
         }
@@ -308,7 +306,7 @@ body {
         background-color: rgba(151,146,228,255);
         border-radius: 25px;
         padding: 20px;
-        color: wheat;
+        color: white;
         text-align: center;
         flex-direction: column;
         align-items: center;
@@ -353,7 +351,70 @@ body {
         }
     }
 
+/* STYLE BENEFITS ------------------------------------------------------------ */
+
+    section.benefits {
+        background-color: rgba(151,146,228,255);
+    }
+
+    .benefits .row {
+        gap: 20px;
+    }
+
+    .benefits .row >.title {
+        width: 100%;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .benefits .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 25px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefits .card .number {
+        font-size: 70px;
+    }
+
+    .benefits .card .number,
+    .benefits .card .title {
+        color: rgba(151,146,228,255);
+    }
+
+
+    /* QUARY BENEFITS --------------------------------------------------- */
+    
+    /* IPAD */
+
+    @media screen and (min-width: 768px){
+        .benefits .row {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        .benefits .row [class^="col"] {
+            padding: 20px 20px;
+        }
+
+        .benefits .col {
+            width: 50%;
+        }
+    }
+
     /* DESKTOP */
+
+    @media screen and (min-width: 1200px) {
+        .benefits .col {
+            width: calc(100% / 3);
+        }
+    }
+
 
 /* ANIMATIONS ------------------------------------------------------------*/
 
