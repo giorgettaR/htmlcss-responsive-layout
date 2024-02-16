@@ -112,6 +112,10 @@ body {
 
 /* STYLE HEADER ------------------------------------------------------------ */
 
+    section {
+        padding: 50px 0;
+    }    
+
     section.header {
         background-color: rgba(0,132,253,255);
         color: white;
@@ -375,6 +379,8 @@ body {
         border-radius: 25px;
         flex-direction: column;
         gap: 20px;
+        width: 100%;
+        height: 100%;
     }
 
     .benefits .card .number {
@@ -407,13 +413,90 @@ body {
         }
     }
 
-    /* DESKTOP */
+    /* DESKTOP --------------------------------------------------------------------------*/
 
     @media screen and (min-width: 1200px) {
         .benefits .col {
             width: calc(100% / 3);
         }
     }
+
+/* STYLE ABOUT US ------------------------------------------------------------ */
+
+    .about-us .title {
+        font-size: 70px;
+        color: rgba(151,146,228,255);
+    }
+    .about-us .col-info {
+        line-height: 35px;
+    }
+
+    .about-us .col-info >* {
+        padding: 20px 0;
+    }
+
+    .about-us .col-quote {
+        position: relative;
+    }
+
+    .about-us .col-quote .photo { 
+        width: 200px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        border-radius: 50%;
+
+    }
+
+    .about-us .col-quote .photo img { 
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .about-us .col-quote .fa-quote-left {
+        position: absolute;
+        top: 20px;
+        left: 150px;
+        font-size: 50px;
+    }
+
+    .about-us .col-quote .fa-quote-left,
+    .about-us .col-quote .text {
+        color: rgba(151,146,228,255);
+    }
+
+    .about-us .col-quote .text {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+    /* QUARY ABOUT US --------------------------------------------------- */
+        
+    /* IPAD */
+
+    @media screen and (min-width: 768px) {
+        .about-us .row {
+            flex-direction: row;
+        }
+
+        .about-us .col-info {
+            width: 65%;
+            padding-right: 30px;
+        }
+
+        .about-us .col-quote {
+            width: 35%;
+        }
+    }
+
+    /* DESKTOP ----------------------------------------------------------------*/
+
+    @media screen and (min-width: 1200px) {
+        
+    }
+
+
 
 
 /* ANIMATIONS ------------------------------------------------------------*/
